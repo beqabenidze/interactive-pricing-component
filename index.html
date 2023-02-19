@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel = 'stylesheet' href = 'styles.css'>
+    <title>Interactive Pricing Component</title>
+</head>
+    <body>       
+        <main>
+            <img class = 'pattern' src="./img/bg-pattern.svg">
+            <section>
+                <header>
+                    <img class = 'circles' src = './img/pattern-circles.svg' >
+                    <h1>Simple, traffic-based pricing</h1>
+                    <h2>Sign-up for our 30-day trial. No credit card required. </h2>
+                </header>
+                <card>
+                    <container class = 'drag'>
+                        <h3 class = 'pageviews'>100K PAGEVIEWS</h3>
+                        <input type="range" min="8" max="24" step="4" name="volume" id="volume" value="16" class = 'line'>
+                        <div class = 'grid-3'>
+                            <number >$16.00</number>
+                            <span class = 'period'>/ month</span>
+                        </div>
+                    </container>
+                    <container class="billing">
+                        <h4>Monthly Billing</h4>
+                        <label class="toggler-wrapper">
+                            <input type="checkbox" class = 'checkbox'>
+                            <div class="toggler-slider">
+                              <div class="toggler-knob"></div>
+                            </div>
+                        </label>
+                        <h4>Yearly Billing</h4>
+                        <num class = 'discount-mobile'>-25%</num>
+                        <num class = 'discount-desktop'>25% discount</num>
+                    </container>
+                    <hr>
+                    <container class="check">
+                        <ul>
+                            <li><img src = './img/icon-check.svg'>Unlimited websites</li>
+                            <li><img src = './img/icon-check.svg'>100% data ownership</li>
+                            <li><img src = './img/icon-check.svg'>Email reports</li>
+                        </ul>
+                        <button>Start my trial</button>
+                    </container>
+                </card>
+            </section>
+        </main>
+        <script src = 'scripts.js'></script>
+    </body>
+</html>
